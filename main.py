@@ -20,7 +20,7 @@ def get_db():
 
 @app.get("/")
 def read_root() -> dict:
-    return {"Hello": "World"}
+    return {"Welcome to librariAPI"}
 
 
 @app.post("/authors/", response_model=schemas.Author)
